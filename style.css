@@ -1,0 +1,161 @@
+:root{
+    --darkbg:#1D5B79;
+    --lightbg:#468B97;
+    --red:#EF6262;
+    --blue:#068FFF;
+    --green:#17594A;
+    --black:#000000;
+    --mainbg:#F8FDCF;
+
+}
+
+.toolbar{
+    height:5rem;
+    background-color:var(--darkbg);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+body{
+    margin:0;
+    padding: 0;
+    background-color: var(--mainbg);
+}
+
+
+.toolbar-color{
+    height: 3rem;
+    width: 15rem;
+    margin-left: 5rem;
+    background-color:var(--lightbg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.color-select{
+    height: 1rem;
+    width: 2rem;
+}
+
+.toolbar-button{
+    height: 3rem;
+    width: 8rem;
+    background-color: var(--lightbg);
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.red{
+    background-color: var(--red);
+}
+.black{
+    background-color: black;
+}
+.green{
+    background-color: var(--green);
+}
+.blue{
+    background-color: var(--blue);
+}
+
+.new-container{
+    height: 50vh;
+    width: 50vw;
+    background-color: yellow;
+    display: flex;
+    position: absolute;
+    left: 25vw;
+    top: 25vh;
+    border: solid var(--black) 2px;
+}
+
+.task-content{
+    width: 40vw;
+    background-color: antiquewhite;
+    border: none;
+    resize: none;
+    padding: 2rem;
+    border-right: solid 2px var(--darkbg);
+    font-size: 5rem;
+    
+}
+
+
+.choose-priority{
+    height: 50vh;
+    width: 10vw;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.priority-color{
+    height: 2rem;
+    width: 4rem;
+}
+
+.card-area{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 6rem;
+    justify-content: space-evenly;
+    
+    
+}
+
+.card{
+    height: 10rem;
+    width: 12rem;
+    position: relative;
+    
+}
+
+.card-color{
+    height: 1rem;
+}
+
+.card-id{
+    height: 1.5rem;
+    font-weight: 200;
+    background-color: var(--lightbg);
+    padding-left: 5px;
+}
+
+.card-text{
+    height: 7.5rem;
+    font-size: 2rem;
+    background-color:var(--darkbg);
+    padding: 0.5rem;
+    overflow: auto;
+    word-break: break-all;
+    outline: none;
+}
+
+.active{
+    border:solid;
+    color:yellow;
+}
+
+.lock-unlock{
+    color:red;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0;
+    
+}
+
+
+
+
+
